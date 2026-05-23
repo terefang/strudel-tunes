@@ -20,16 +20,6 @@ let notes2 = "<C# C# A# C# C# A# C#>"
 //let notes = "C H I C K E N"
 //;
 
-_$: s("9000_cb*4").note(notes)
-    .acidenv2(
-    slider(0.93,0,2,.01),
-    slider(0.13,0,1,.01),
-    slider(0.17,0,.5,.001),
-    slider(104,0,200,4)) 
-  .delay(slider(0.4,0,2,.01))
-  .room(slider(1.7,0,2,.1))
-  .gain(slider(0.2,0,2,.1))
-  ._scope()
 $: s("breaks/8").fit()
   .o(2)
   ._scope()
