@@ -38,13 +38,24 @@ setcpm(240)
 const chords = chord(`
   C#
   `)
+
+//---------------------------------------------------------------------
+$: "D# ~ ~ ~".voicing().s("tno_kick1").clip(1.5)
+  .transpose(-25)
+  .decay(slider(0.3,0,3,.1))
+  .lpf(slider(360,0,5000,10))
+//  .acidenv(slider(0.46,0,3,.01))
+//  .acidenv(perlin.range(0.3,slider(0.81,0.5,2,.01)))
+  .gain(slider(1.4,0,2,0.1))
+  ._scope()
+
 //---------------------------------------------------------------------
 $: chords.voicing().s("gm_acoustic_bass:3").clip(1.5)
   .transpose("<0 -1 1 0>*5".add(-40))
   .decay(slider(1.3,0,3,.1))
   //.lpf(slider(1310,0,5000,10))
 //  .acidenv(slider(0.46,0,3,.01))
-  .acidenv(perlin.range(0.3,.8))
+  .acidenv(perlin.range(0.3,slider(0.81,0.5,2,.01)))
   .gain(slider(0.8,0,2,0.1))
   ._scope()
   ```
