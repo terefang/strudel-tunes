@@ -59,3 +59,21 @@ $: chords.voicing().s("gm_acoustic_bass:3").clip(1.5)
   .gain(slider(0.8,0,2,0.1))
   ._scope()
   ```
+### base bass drum
+```
+register('acidenv2', (x,xf,pat) => pat.lpf(xf)
+  .lpenv( x * 9 ).lps(.2).lpd(.12)
+)
+
+setcpm(160)
+
+$: s('bossdr220_bd').n("<0>").clip(2)
+  .room(1)
+  .roomsize(2)
+  .o(2)
+  .attack(perlin.range(0,.03))
+  .decay(slider(0.3,0,3,.1))
+  .acidenv2(slider(0.297),slider(62,2,200,5))
+  .gain(slider(0.815,.1,1.1))
+  ._scope()
+  ```
