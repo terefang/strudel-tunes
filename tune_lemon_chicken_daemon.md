@@ -57,3 +57,19 @@ $PAD: "< M i s s i s s i p p i - >*16"
  .postgain(GLOBALGAIN)
 ._pianoroll()
 ```
+
+### loving vibe
+
+```
+$PAD: note("< C C C C G G A# A# >*16")
+  .transpose("<0 2 0 2 0 0 1 0>*16")
+  .s("supersaw")
+  //.acidenv(perlin.range(10,99).mul(.01))
+  .acidenv(slider(61.6,0,100).mul(.01))
+  //.o(2)
+  //.accent(slider(0.3,0.1,2,.1))
+  .room(1)
+  .roomsize(slider(0.8,0.1,2,.1))
+ .postgain(GLOBALGAIN)
+._pianoroll()
+```
