@@ -20,7 +20,7 @@ const CHARMAP = {
   Y: "78",  Z: "80",
 };
 
-$: "<t h e d a e m o n h a s s p o c k e n>*16".pickSqueeze(CHARMAP).note().s("supersaw")
+$PAD2: "<t h e d a e m o n h a s s p o c k e n>*16".pickSqueeze(CHARMAP).note().s("supersaw")
   //.detune(.3).lpf(100).lpenv(4).lpq(7).lpdecay(.1)
 .acidenv(slider(0.5,0,2,0.1))
   .o(2)
@@ -28,16 +28,32 @@ $: "<t h e d a e m o n h a s s p o c k e n>*16".pickSqueeze(CHARMAP).note().s("s
   .roomsize(slider(0.8,0.1,2,.1))
   ._scope()
   
-$: "< L E M O N C H I C K E N I N T H E F R I E R E >*16".pickSqueeze(CHARMAP).note().s("supersaw")
+$PAD1: "< L E M O N C H I C K E N I N T H E F R I E R E >*16".pickSqueeze(CHARMAP).note().s("supersaw")
   //.detune(.3).lpf(100).lpenv(4).lpq(7).lpdecay(.1)
 .acidenv(slider(1.1,0,2,0.1))
   .o(2)
   .room(1)
   .roomsize(slider(0.5,0.1,2,.1))
   ._scope()
-$: s("sbd*4")
+
+$BASE: s("sbd*4")
   .room(1)  
   .roomsize(slider(0.9,0.1,1,.1))
   .delay(.2)
   ._scope()
+```
+
+### nice
+
+```
+$PAD: "< M i s s i s s i p p i - >*16"
+  .pickSqueeze(CHARMAP)
+  .note()
+  .s("square")
+  .acidenv(perlin.range(10,99).mul(.01))
+  .o(2)
+  .room(1)
+  .roomsize(slider(0.3,0.1,2,.1))
+ .postgain(GLOBALGAIN)
+._pianoroll()
 ```
