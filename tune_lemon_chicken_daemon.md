@@ -42,6 +42,9 @@ $BASE: s("sbd*4")
   .delay(.2)
   ._scope()
 ```
+### apple cidre
+
+`"< a p p l e c o r n >*16"`
 
 ### nice
 
