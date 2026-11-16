@@ -1,0 +1,13 @@
+{
+  "_base": "https://raw.githubusercontent.com/terefang/strudel-tunes/main/",
+  "qad": "qadrift.wav",
+  "qams": "qasymultisaw.wav",
+  "qhsy": "qhardsync.wav",
+  "qh5s": "qhyper5saw.wav",
+  "qhs": "qhypersaw.wav",
+  "qms": "qmultisaw.wav",
+  "qss": "qsupersaw.wav",
+  "qssi": "qsupersine.wav",
+  "qssq": "qsupersquare.wav",
+  "qst": "qsupertriangle.wav"
+}
