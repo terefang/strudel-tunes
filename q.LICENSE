@@ -1,0 +1,34 @@
+Copyright: Copyright 2026 terefang@gmail.com. All rights reserved. Dedicated to the Public Domain under CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/)
+Duration: 00:00:10.00, 48000 Hz, 2 channels, s16, 1536 kb/s
+
+'qadrift.wav':
+    title           : Analog Thermal Drift Saw
+    comment         : 6-voice stereo sawtooth with independent LFO pitch drift at 110.00 Hz
+'qasymultisaw.wav':
+    title           : Asymmetric Broken Multi-Saw
+    comment         : 8-voice stereo sawtooth with 1.5x sharp / 0.5x flat detune curve at 110.00 Hz
+'qhardsync.wav':
+    title           : Hard-Sync Supersaw Lead
+    comment         : 7-voice hard-synced sawtooth stack locked to master clock at 110.00 Hz
+'qhyper5saw.wav':
+    title           : Fifth-Power Hypersaw
+    comment         : 9-voice stereo hypersaw using x^5 outer-spread detune curve at 110.00 Hz
+'qhypersaw.wav':
+    title           : Virus TI Hypersaw
+    comment         : 9-voice wide stereo supersaw with -1 sub-octave at 110.00 Hz
+'qmultisaw.wav':
+    title           : Multi-Saw Linear Unison
+    comment         : 8-voice smooth linearly detuned stereo sawtooth stack at 110.00 Hz
+'qsupersaw.wav':
+    title           : JP-8000 Supersaw
+    comment         : 7-voice mono asymmetric cubic supersaw at 110.00 Hz
+'qsupersine.wav':
+    title           : Supersine Organ Unison
+    comment         : 5-voice warm detuned sine wave stack at 110.00 Hz
+'qsupersquare.wav':
+    title           : Supersquare (35% Pulse)
+    comment         : 7-voice stereo detuned pulse wave (0.35 duty cycle) at 110.00 Hz
+'qsupertriangle.wav':
+    title           : Supertriangle Sub Stack
+    comment         : 7-voice stereo triangle unison with -1 sub-octave at 110.00 Hz
+
